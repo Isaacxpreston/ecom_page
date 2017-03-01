@@ -5,7 +5,7 @@ var styles = {
     wrapper: {
       display: "flex",
       justifyContent: "flex-end",
-      height: "3em",
+      height: "4em",
       paddingLeft: "5em",
       paddingRight: "5em",
       '@media (max-width: 600px)': {

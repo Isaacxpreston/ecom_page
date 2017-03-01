@@ -20,7 +20,7 @@ const styles = {
 	},
 	content: {
 		position: "absolute",
-		top: "23em",
+		top: "24em",
 		left: 0,
 		width: "100%",
 		zIndex: 2,
@@ -28,7 +28,7 @@ const styles = {
 	},
 	backdrop: {
 		position: "fixed",
-		top: "3em",
+		top: "4em",
 		left: 0,
 		width: "100%",
 		zIndex: 1,

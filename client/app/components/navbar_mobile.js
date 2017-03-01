@@ -24,7 +24,7 @@ var styles = {
       display: "flex",
     //   flex: 1, //change to flex width
       width: "7.5em",
-      height: "3em",
+      height: "4em",
       border: "1px solid black",
       background: "lightgrey",
     },

@@ -6,6 +6,7 @@ var styles = {
     display: "flex",
     paddingLeft: "5em",
     paddingRight: "5em",
+    background: "darkgreen",
     '@media (max-width: 600px)': {
       paddingLeft: "2em",
       paddingRight: "2em",
@@ -16,7 +17,7 @@ var styles = {
     height: "20em",
     border: "1px solid black",
     background: "navy",
-    color: "white",
+    color: "blue",
     textAlign: "center"
   }
 }
