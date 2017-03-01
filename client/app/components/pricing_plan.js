@@ -18,19 +18,25 @@ var styles = {
     flex: 1,
     background: "darkred"
   },
-  pricing: {
+  pricing_wrapper: {
     display: "flex",
-    alignItems: "center"
-    //add padding
-    // flex: "3"
+    // flexDirection: "column",
+    flex: 3,
   },
-  joins: {
-    paddingTop: "0.25em",
-    paddingLeft: "0.2em",
-    alignSelf: "flex-start"
+  pricing: {
+    margin: "auto",
+    // display: "flex",
+    // flexDirection: "column",
+    // flex: 3,
+    // padding: "0.5em"
+  },
+  pricing_inner: {
+    display: "flex",
+    flex: 1,
+    background: "grey"
   },
   currency: {
-    fontSize: "2em"
+    fontSize: "2.5em"
   },
   title: {
     margin: "auto",
@@ -40,9 +46,7 @@ var styles = {
     textTransform: "uppercase",
   },
   feature: {
-    paddingTop: "1em",
-    paddingLeft: "1em",
-    paddingRight: "1em",
+    // padding: "1em",
     flex: 1,
     color: "white",
     background: "navy"
@@ -54,25 +58,34 @@ const PricingPlan = React.createClass({
 	render() {
     return (
         <div style={styles.content}>
+
           <div style={styles.title_wrapper}>
             <div style={styles.title}>
               Trader
             </div>
           </div>
-          <div style={styles.pricing}>
-            <div style={styles.currency}>
-              $9.99
-            </div>
-            <div style={styles.joins}>
-              or
-            </div>
-            <div style={styles.currency}>
-              .01 BTC 
-            </div>
-            <div style={styles.joins}>
-              / year
+
+          <div  style={styles.pricing_wrapper}>
+            <div style={styles.pricing}>
+              <div style={styles.pricing_inner}>
+                <div style={styles.currency}>
+                  $9.99
+                </div>
+                <div>
+                  or
+                </div>
+              </div>
+              <div style={styles.pricing_inner}>
+                <div style={styles.currency}>
+                  .01 BTC 
+                </div>
+                <div>
+                  / year
+                </div>
+              </div>
             </div>
           </div>
+
           <div style={styles.feature}>
             Unlimited trades
           </div>
@@ -91,6 +104,7 @@ const PricingPlan = React.createClass({
           <div style={styles.feature}>
             Export to TurboTax®
           </div>
+
         </div>
     )
 	}
