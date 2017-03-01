@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+  import Radium from 'radium'
 
 var pulseKeyframes = Radium.keyframes({
   '0%': {width: '10%'},
@@ -19,7 +19,6 @@ var styles = {
 };
 
 const FlexContainer = React.createClass({
-
 	render() {
     return (
       <div style={styles.inner}>

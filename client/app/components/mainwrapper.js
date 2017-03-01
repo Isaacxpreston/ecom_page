@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, browserHistory} from 'react-router'
 import {connect} from 'react-redux'
 
-import FlexContainer from './flex_container'
+import LandingSplash from './landing_splash'
 
 const Main = React.createClass({
 
@@ -26,25 +26,7 @@ const Main = React.createClass({
 	render() {
 		return (
 			<div>
-
-				we gonna feed u all props blalbh
-				<FlexContainer {...this.props}>
-					<div>
-						content one
-						sakdufhsak fasudf usk sdksdf 
-					</div>
-					<div>
-						content two
-						29239482379847
-					</div>
-				</FlexContainer>
-				{/*backgrond
-				features
-				pricing
-				foot*/}
-
-
-
+				<LandingSplash />
 			</div>
 		)
 	}
