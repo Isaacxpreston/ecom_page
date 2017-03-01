@@ -14,17 +14,17 @@ var styles = {
 }
 
 
-const LandingSplash = React.createClass({
+const Footer = React.createClass({
 
 	render() {
     return (
       <div style={styles.wrapper}>
         <div style={styles.main}>
-            <h1>image placeholder</h1>
+            <h1>footer</h1>
         </div>
       </div>
     )
 	}
 })
 
-export default Radium(LandingSplash);
+export default Radium(Footer);

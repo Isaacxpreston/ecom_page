@@ -3,17 +3,11 @@ import {Link, browserHistory} from 'react-router'
 import {connect} from 'react-redux'
 
 import LandingSplash from './landing_splash'
+import Features from './features'
+import Pricing from './pricing'
+import Footer from './footer'
 
 const Main = React.createClass({
-
-	// someAction () {
-	// 	this.props.dispatch(someAction())
-	// },
-	
-	// signUp () {
-	// 	this.props.dispatch(signUp())
-	// },
-
 	//have three layers
 		//navbar
 		//content
@@ -22,11 +16,13 @@ const Main = React.createClass({
 			//footer
 		//background image
 
-	//make a layer class that has flexbox properties and see if it works on children injected into it
 	render() {
 		return (
 			<div>
 				<LandingSplash />
+				<Features />
+				<Pricing />
+				<Footer />
 			</div>
 		)
 	}
