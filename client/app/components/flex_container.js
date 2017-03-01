@@ -10,12 +10,11 @@ var pulseKeyframes = Radium.keyframes({
 var styles = {
   inner: {
     // Use a placeholder animation name in `animation`
-    animation: 'x 3s ease 0s infinite',
+    // animation: 'x 3s ease 0s infinite',
     // Assign the result of `keyframes` to `animationName`
-    animationName: pulseKeyframes,
-    background: 'blue',
-    height: '4px',
-    margin: '0 auto',
+    // animationName: pulseKeyframes,
+    background: 'lime',
+    display: 'flex'
   }
 };
 
@@ -24,7 +23,7 @@ const FlexContainer = React.createClass({
 	render() {
     return (
       <div style={styles.inner}>
-        aksjdf
+        {this.props.children}
       </div>
     )
 	}
