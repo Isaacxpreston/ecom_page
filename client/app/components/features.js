@@ -53,7 +53,6 @@ var styles = {
     }
   },
   description: {
-    // flex: 1,
     fontSize: "4em",
     textTransform: "uppercase",
     border: "1px solid black",

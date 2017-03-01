@@ -14,7 +14,6 @@ var styles = {
     },
     main: {
       display: "flex",
-    //   flex: 1,
       width: "7.5em",
       border: "1px solid black",
       background: "lightgrey",

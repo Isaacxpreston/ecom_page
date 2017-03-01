@@ -39,7 +39,6 @@ var styles = {
     
   },
   description: {
-    // flex: 1,
     fontSize: "4em",
     textTransform: "uppercase",
     border: "1px solid black",
@@ -62,10 +61,6 @@ const Pricing = React.createClass({
           <PricingPlan />
           <PricingPlan />
           <PricingPlan />
-            {/*<div style={styles.feature}> option </div>
-            <div style={styles.feature}> option </div>
-            <div style={styles.feature}> option </div>
-            <div style={styles.feature}> option </div>*/}
         </div>
       </div>
     )
