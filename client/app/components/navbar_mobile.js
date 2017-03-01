@@ -6,22 +6,24 @@ var styles = {
       display: "none",
       '@media (max-width: 600px)': {
         display: "flex",
-        paddingLeft: "5em",
-        paddingRight: "5em",
+        justifyContent: "flex-end",
+        paddingLeft: "2em",
+        paddingRight: "2em",
       }
     },
 
     drop_down: {
       position: "absolute",
-      top: "3em",
-      right: "5em",
-      width: "calc(50% - 5em)",
+      top: "calc(3em +2px)",
+      right: "calc(2em + 2px)",
+      width: "7.5em",
       flexDirection: "column",
     },
 
     main: {
       display: "flex",
-      flex: 1, //change to flex width
+    //   flex: 1, //change to flex width
+      width: "7.5em",
       height: "3em",
       border: "1px solid black",
       background: "lightgrey",

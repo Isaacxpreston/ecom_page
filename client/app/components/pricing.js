@@ -5,6 +5,10 @@ var styles = {
   wrapper: {
     paddingLeft: "5em",
     paddingRight: "5em",
+    '@media (max-width: 600px)': {
+      paddingLeft: "2em",
+      paddingRight: "2em",
+    }
   },
   row: {
     display: "flex",
