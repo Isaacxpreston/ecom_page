@@ -14,7 +14,7 @@ var styles = {
   },
   main: {
     flex: 1,
-    height: "20em",
+    height: "30em",
     border: "1px solid black",
     background: "navy",
     color: "blue",

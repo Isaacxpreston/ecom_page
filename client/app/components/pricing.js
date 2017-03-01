@@ -23,13 +23,13 @@ var styles = {
       flexDirection: "column"
     }
   },
-  column: {
+  row_padding: {
     display: "flex",
     flex: 1,
-    flexDirection: "column",
     background: "lightblue",
     border: "1px solid blue",
-    paddingBottom: "2em"
+    paddingTop: "1em",
+    paddingBottom: "1em",
   },
   feature: {
     flex: 1,
@@ -39,7 +39,9 @@ var styles = {
     
   },
   description: {
-    flex: 1,
+    // flex: 1,
+    fontSize: "4em",
+    textTransform: "uppercase",
     border: "1px solid black",
     background: "lightgrey",
     margin: "auto"
@@ -52,9 +54,8 @@ const Pricing = React.createClass({
 	render() {
     return (
       <div style={styles.wrapper}>
-        <div style={styles.column}>
-          <div style={styles.description}> <h2> pricing plans </h2> </div>
-          <div style={styles.description}> description </div>
+        <div style={styles.row_padding}>
+          <div style={styles.description}>pricing</div>
         </div>
         <div style={styles.responsive_row}>
           <PricingPlan />

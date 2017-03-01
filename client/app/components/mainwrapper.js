@@ -20,7 +20,7 @@ const styles = {
 	},
 	content: {
 		position: "absolute",
-		top: "24em",
+		top: "34em",
 		left: 0,
 		width: "100%",
 		zIndex: 2,

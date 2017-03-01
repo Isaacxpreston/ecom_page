@@ -6,10 +6,12 @@ var styles = {
     display: "flex",
     flexDirection: "column",
     flex: 1,
-    // paddingLeft: "1em",
-    // paddingRight: "1em",
+    height: "30em",
     border: "1px solid black",
     background: "lightgrey",
+    '@media (max-width: 900px)': {
+      height: "auto"
+    }
   },
   title: {
     flex: 1,
@@ -18,7 +20,7 @@ var styles = {
     background: "darkred"
   },
   description: {
-    flex: 1,
+    flex: 5,
     background: "red"
   }
 }
