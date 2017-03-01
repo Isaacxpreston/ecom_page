@@ -1,0 +1,16 @@
+.something {
+  color: red;
+  background: blue;
+  animation: fadein 2s ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate3d(-12px, 15px, -100px) /*make sure to have px*/
+  }
+  to {  
+    opacity: 1;
+    transform: none
+  }
+}
