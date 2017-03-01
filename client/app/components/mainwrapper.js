@@ -6,6 +6,7 @@ import LandingSplash from './landing_splash'
 import Features from './features'
 import Pricing from './pricing'
 import Footer from './footer'
+import NavBar from './navbar'
 
 const styles = {
 	nav: {
@@ -47,13 +48,12 @@ const Main = React.createClass({
 		return (
 			<div>
 				<div style={styles.nav}>
-					navbar
+					<NavBar />
 				</div>
 				<div style={styles.backdrop}>
 					<LandingSplash />
 				</div>
 				<div style={styles.content}>
-					{/*<LandingSplash />*/}
 					<Features />
 					<Pricing />
 					<Footer />
