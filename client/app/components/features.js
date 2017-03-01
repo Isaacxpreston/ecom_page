@@ -23,7 +23,15 @@ var styles = {
     flex: 1,
     border: "1px solid black",
     background: "lightgrey",
-    
+  },
+  responsive_row: {
+    display: "flex",
+    flex: 1,
+    background: "lightblue",
+    border: "1px solid blue",
+    '@media (max-width: 600px)': {
+      flexDirection: "column"
+    }
   },
   description: {
     flex: 1,
@@ -44,13 +52,13 @@ const Features = React.createClass({
         <div style={styles.description}> description </div>
         <div style={styles.description}> description </div>
       </div>
-      <div style={styles.row}>
+      <div style={styles.responsive_row}>
         <div style={styles.column}>
             <div style={styles.feature}> feature </div>
             <div style={styles.feature}> feature </div>
             <div style={styles.feature}> feature </div>
         </div>
-        <div style={styles.row}>
+        <div style={styles.responsive_row}>
             <div style={styles.feature}> image </div>
             <div style={styles.feature}> description </div>
         </div>
