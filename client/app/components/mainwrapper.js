@@ -7,6 +7,7 @@ import Features from './features'
 import Pricing from './pricing'
 import Footer from './footer'
 import NavBar from './navbar'
+import MobileNavBar from './navbar_mobile'
 
 const styles = {
 	nav: {
@@ -19,36 +20,31 @@ const styles = {
 	},
 	content: {
 		position: "absolute",
-		top: "250px",
+		top: "23em",
 		left: 0,
 		width: "100%",
 		zIndex: 2,
 		background: "blue",
-		height: "1200px"
 	},
 	backdrop: {
 		position: "fixed",
-		top: 0,
+		top: "3em",
 		left: 0,
 		width: "100%",
 		zIndex: 1,
 	},
-	// container: {
-	// 	// position: "absolute",
-	// 	width: "40%",
-	// 	zIndex: 100
-	// }
+	wrapper: {
+	}
 }
 
 const Main = React.createClass({
 
-	//todo- margins on both sides
-
 	render() {
 		return (
-			<div>
+			<div style={styles.wrapper}>
 				<div style={styles.nav}>
 					<NavBar />
+					<MobileNavBar />
 				</div>
 				<div style={styles.backdrop}>
 					<LandingSplash />

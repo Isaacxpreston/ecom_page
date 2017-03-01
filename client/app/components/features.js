@@ -2,6 +2,10 @@ import React from 'react'
 import Radium from 'radium'
 
 var styles = {
+  wrapper: {
+    paddingLeft: "5em",
+    paddingRight: "5em",
+  },
   row: {
     display: "flex",
     flex: 1,
@@ -34,7 +38,7 @@ const Features = React.createClass({
 
 	render() {
     return (
-      <div>
+      <div style={styles.wrapper}>
       <div style={styles.column}>
         <div style={styles.description}> <h2> main features </h2> </div>
         <div style={styles.description}> description </div>

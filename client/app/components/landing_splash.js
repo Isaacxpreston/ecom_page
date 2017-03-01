@@ -3,11 +3,13 @@ import Radium from 'radium'
 
 var styles = {
   wrapper: {
-    display: "flex"
+    display: "flex",
+    paddingLeft: "5em",
+    paddingRight: "5em",
   },
   main: {
     flex: 1,
-    height: "250px",
+    height: "20em",
     border: "1px solid black",
     background: "navy",
     color: "white",

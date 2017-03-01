@@ -2,6 +2,10 @@ import React from 'react'
 import Radium from 'radium'
 
 var styles = {
+  wrapper: {
+    paddingLeft: "5em",
+    paddingRight: "5em",
+  },
   row: {
     display: "flex",
     flex: 1,
@@ -34,11 +38,11 @@ const Pricing = React.createClass({
 
 	render() {
     return (
-      <div>
-      <div style={styles.column}>
-        <div style={styles.description}> <h2> pricing plans </h2> </div>
-        <div style={styles.description}> description </div>
-      </div>
+      <div style={styles.wrapper}>
+        <div style={styles.column}>
+          <div style={styles.description}> <h2> pricing plans </h2> </div>
+          <div style={styles.description}> description </div>
+        </div>
         <div style={styles.row}>
             <div style={styles.feature}> option </div>
             <div style={styles.feature}> option </div>

@@ -3,7 +3,9 @@ import Radium from 'radium'
 
 var styles = {
   wrapper: {
-    display: "flex"
+    display: "flex",
+    paddingLeft: "5em",
+    paddingRight: "5em",
   },
   main: {
     flex: 1,
