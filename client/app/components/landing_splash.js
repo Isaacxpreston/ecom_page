@@ -2,26 +2,29 @@ import React from 'react'
 import Radium from 'radium'
 import FlexContainer from './flex_container'
 
-var globals = {
-  flex: 1,
-  "textAlign": "center"
-}
-
 var styles = {
-  global: {
-    flex: 1
+  row: {
+    display: "flex",
+    background: "blue",
+    color: "navy"
+  },
+  column: {
+    display: "flex",
+    background: "blue",
+    color: "navy",
+    flexDirection: "column"
   },
   content1: {
-    background: "blue",
-    color: "white",
-    border: "5px solid green",
-    margin: "5px",
-    padding: "5px",
-    ...globals
+    flex: 1,
+    background: "lightblue",
   },
   content2: {
-    background: "red",
-    ...globals
+    flex: 1,
+    background: "turquoise"
+  },
+  feature: {
+    flex: 1,
+    background: "lightgrey"
   }
 }
 
@@ -30,16 +33,21 @@ const LandingSplash = React.createClass({
 
 	render() {
     return (
-      <FlexContainer>
+      <div style={styles.row}>
         <div style={styles.content1}>
-          content one
-            <br />
-            aksdfks
+          <div style={styles.column}>
+            <div style={styles.feature}> feature </div>
+            <div style={styles.feature}> feature </div>
+            <div style={styles.feature}> feature </div>
+          </div>
         </div>
         <div style={styles.content2}>
-          content two
+          <div style={styles.row}>
+            <div style={styles.feature}> feature </div>
+            <div style={styles.feature}> feature </div>
+          </div>
         </div>
-      </FlexContainer>
+      </div>
     )
 	}
 })
