@@ -7,6 +7,33 @@ import Features from './features'
 import Pricing from './pricing'
 import Footer from './footer'
 
+const styles = {
+	nav: {
+		zIndex: 3,
+		position: "fixed",
+		top: 0,
+		left: 0,
+		width: "100%",
+		background: "grey"
+	},
+	content: {
+		position: "absolute",
+		top: "250px",
+		left: 0,
+		width: "100%",
+		zIndex: 2,
+		background: "blue",
+		height: "1200px"
+	},
+	backdrop: {
+		position: "fixed",
+		top: 0,
+		left: 0,
+		width: "100%",
+		zIndex: 1,
+	}
+}
+
 const Main = React.createClass({
 	//have three layers
 		//navbar
@@ -19,10 +46,18 @@ const Main = React.createClass({
 	render() {
 		return (
 			<div>
-				<LandingSplash />
-				<Features />
-				<Pricing />
-				<Footer />
+				<div style={styles.nav}>
+					navbar
+				</div>
+				<div style={styles.backdrop}>
+					<LandingSplash />
+				</div>
+				<div style={styles.content}>
+					{/*<LandingSplash />*/}
+					<Features />
+					<Pricing />
+					<Footer />
+				</div>
 			</div>
 		)
 	}

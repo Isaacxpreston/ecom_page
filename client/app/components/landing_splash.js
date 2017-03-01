@@ -7,8 +7,10 @@ var styles = {
   },
   main: {
     flex: 1,
+    height: "250px",
     border: "1px solid black",
-    background: "lightgrey",
+    background: "navy",
+    color: "white",
     textAlign: "center"
   }
 }
@@ -20,6 +22,9 @@ const LandingSplash = React.createClass({
     return (
       <div style={styles.wrapper}>
         <div style={styles.main}>
+            <h1>image placeholder</h1>
+            <h1>image placeholder</h1>
+            <h1>image placeholder</h1>
             <h1>image placeholder</h1>
         </div>
       </div>
