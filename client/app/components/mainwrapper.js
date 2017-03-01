@@ -32,17 +32,17 @@ const styles = {
 		left: 0,
 		width: "100%",
 		zIndex: 1,
-	}
+	},
+	// container: {
+	// 	// position: "absolute",
+	// 	width: "40%",
+	// 	zIndex: 100
+	// }
 }
 
 const Main = React.createClass({
-	//have three layers
-		//navbar
-		//content
-			//features
-			//pricing
-			//footer
-		//background image
+
+	//todo- margins on both sides
 
 	render() {
 		return (
