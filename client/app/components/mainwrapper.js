@@ -2,6 +2,8 @@ import React from 'react'
 import {Link, browserHistory} from 'react-router'
 import {connect} from 'react-redux'
 
+import '../stylesheets/open_sans.css'
+
 import LandingSplash from './landing_splash'
 import Features from './features'
 import Pricing from './pricing'
@@ -34,7 +36,7 @@ const styles = {
 		zIndex: 1,
 	},
 	wrapper: {
-		fontFamily: "sans-serif"
+		// fontFamily: "sans-serif"
 	}
 }
 

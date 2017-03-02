@@ -17,7 +17,7 @@ var styles = {
       display: "flex",
       width: "7.5em",
     //   border: "1px solid black",
-      background: "lightgrey",
+      // background: "lightgrey",
     },
     center: {
       margin: "auto"

@@ -10,7 +10,7 @@ var styles = {
     margin: "1em",
     // border: "1px solid black",
     // background: "lightgrey",
-    '@media (max-width: 900px)': {
+    '@media (max-width: 1100px)': {
       height: "auto"
     }
   },
@@ -69,11 +69,11 @@ const PricingPlan = React.createClass({
           <div  style={styles.pricing_wrapper}>
             <div style={styles.pricing}>
               <div style={styles.pricing_inner}>
-                <div style={styles.join}>
+                {/*<div style={styles.join}>
                   $
-                </div>
+                </div>*/}
                 <div style={styles.currency}>
-                  9.99
+                  $9.99
                 </div>
                 <div style={styles.join}>
                   or

@@ -27,7 +27,7 @@ var styles = {
       width: "7.5em",
       height: "4em",
     //   border: "1px solid black",
-      background: "lightgrey",
+      // background: "lightgrey",
     },
 
     center: {

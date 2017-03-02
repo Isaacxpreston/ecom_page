@@ -19,7 +19,7 @@ var styles = {
     flex: 1,
     // background: "lightblue",
     // border: "1px solid blue",
-    '@media (max-width: 900px)': {
+    '@media (max-width: 1100px)': {
       flexDirection: "column"
     }
   },
