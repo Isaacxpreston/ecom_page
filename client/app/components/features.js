@@ -9,7 +9,7 @@ var styles = {
     paddingRight: "5em",
     paddingBottom: "5em",
     paddingTop: "2em",
-    background: "green",
+    background: "white",
     '@media (max-width: 600px)': {
       paddingLeft: "2em",
       paddingRight: "2em",
@@ -19,35 +19,30 @@ var styles = {
     display: "flex",
     flex: 1,
     flexDirection: "column",
-    background: "lightblue",
-    border: "1px solid blue",
+    // background: "lightblue",
+    // border: "1px solid blue",
   },
   row_padding: {
     display: "flex",
     flex: 1,
-    background: "lightblue",
-    border: "1px solid blue",
+    // background: "lightblue",
+    // border: "1px solid blue",
     paddingTop: "1em",
     paddingBottom: "1em",
   },
-  feature: {
-    flex: 1,
-    border: "1px solid black",
-    background: "lightgrey",
-  },
   image: {
-    flex: 1,
-    border: "1px solid black",
-    background: "navy",
-    color: "blue",
-    textAlign: "center",
-    margin: "auto"
+    height: "500px",
+    width: "600px",
+    paddingLeft: "2em",
+    '@media (max-width: 900px)': {
+      display: "none"
+    } 
   },
   responsive_row: {
     display: "flex",
     flex: 1,
-    background: "lightblue",
-    border: "1px solid blue",
+    // background: "lightblue",
+    // border: "1px solid blue",
     '@media (max-width: 900px)': {
       flexDirection: "column"
     }
@@ -55,8 +50,8 @@ var styles = {
   description: {
     fontSize: "4em",
     textTransform: "uppercase",
-    border: "1px solid black",
-    background: "lightgrey",
+    // border: "1px solid black",
+    // background: "lightgrey",
     margin: "auto"
   }
 }
@@ -79,16 +74,7 @@ const Features = React.createClass({
             <BulletPoint />
             <BulletPoint />
         </div>
-        <div style={styles.responsive_row}>
-            <div style={styles.image}>
-              <h1>image placeholder</h1>
-              <h1>image placeholder</h1>
-              <h1>image placeholder</h1>
-              <h1>image placeholder</h1>
-              <h1>image placeholder</h1>
-              <h1>image placeholder</h1>
-            </div>
-        </div>
+        <img src={require('../images/computer.png')} style={styles.image} />
       </div>
       </div>
     )

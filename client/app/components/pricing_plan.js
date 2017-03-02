@@ -20,15 +20,10 @@ var styles = {
   },
   pricing_wrapper: {
     display: "flex",
-    // flexDirection: "column",
     flex: 3,
   },
   pricing: {
     margin: "auto",
-    // display: "flex",
-    // flexDirection: "column",
-    // flex: 3,
-    // padding: "0.5em"
   },
   pricing_inner: {
     display: "flex",
@@ -38,6 +33,9 @@ var styles = {
   currency: {
     fontSize: "2.5em"
   },
+  join: {
+    paddingTop: "1.75em"
+  },
   title: {
     margin: "auto",
     textAlign: "center",
@@ -46,7 +44,9 @@ var styles = {
     textTransform: "uppercase",
   },
   feature: {
-    // padding: "1em",
+    paddingLeft: "1em",
+    paddingRight: "1em",
+    paddingTop: "1em",
     flex: 1,
     color: "white",
     background: "navy"
@@ -68,10 +68,13 @@ const PricingPlan = React.createClass({
           <div  style={styles.pricing_wrapper}>
             <div style={styles.pricing}>
               <div style={styles.pricing_inner}>
-                <div style={styles.currency}>
-                  $9.99
+                <div style={styles.join}>
+                  $
                 </div>
-                <div>
+                <div style={styles.currency}>
+                  9.99
+                </div>
+                <div style={styles.join}>
                   or
                 </div>
               </div>
@@ -79,7 +82,7 @@ const PricingPlan = React.createClass({
                 <div style={styles.currency}>
                   .01 BTC 
                 </div>
-                <div>
+                <div style={styles.join}>
                   / year
                 </div>
               </div>

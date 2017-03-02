@@ -4,21 +4,21 @@ import Radium from 'radium'
 var styles = {
   wrapper: {
     display: "flex",
-    paddingLeft: "5em",
-    paddingRight: "5em",
-    background: "darkgreen",
-    '@media (max-width: 600px)': {
-      paddingLeft: "2em",
-      paddingRight: "2em",
-    }
+    // paddingLeft: "5em",
+    // paddingRight: "5em",
+    // background: "white",
+    // '@media (max-width: 600px)': {
+    //   paddingLeft: "2em",
+    //   paddingRight: "2em",
+    // }
   },
   main: {
     flex: 1,
     height: "30em",
-    border: "1px solid black",
-    background: "navy",
-    color: "blue",
-    textAlign: "center"
+    // border: "1px solid black",
+    // background: "navy",
+    // color: "blue",
+    // textAlign: "center"
   }
 }
 
@@ -28,12 +28,10 @@ const LandingSplash = React.createClass({
 	render() {
     return (
       <div style={styles.wrapper}>
-        <div style={styles.main}>
+        {/*<div style={styles.main}>
             <h1>image placeholder</h1>
-            <h1>image placeholder</h1>
-            <h1>image placeholder</h1>
-            <h1>image placeholder</h1>
-        </div>
+        </div>*/}
+        <img src={require('../images/buildings.jpg')} style={styles.main} />
       </div>
     )
 	}
