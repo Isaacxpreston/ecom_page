@@ -4,7 +4,8 @@ import Radium from 'radium'
 var styles = {
     wrapper: {
       display: "none",
-      '@media (max-width: 600px)': {
+      background: "grey",
+      '@media (max-width: 700px)': {
         display: "flex",
         justifyContent: "flex-end",
         paddingLeft: "2em",
@@ -25,7 +26,7 @@ var styles = {
     //   flex: 1, //change to flex width
       width: "7.5em",
       height: "4em",
-      border: "1px solid black",
+    //   border: "1px solid black",
       background: "lightgrey",
     },
 

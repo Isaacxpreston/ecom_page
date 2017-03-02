@@ -14,7 +14,7 @@ var styles = {
   },
   main: {
     flex: 1,
-    height: "30em",
+    height: "100%", //30em
     // border: "1px solid black",
     // background: "navy",
     // color: "blue",
@@ -28,9 +28,6 @@ const LandingSplash = React.createClass({
 	render() {
     return (
       <div style={styles.wrapper}>
-        {/*<div style={styles.main}>
-            <h1>image placeholder</h1>
-        </div>*/}
         <img src={require('../images/buildings.jpg')} style={styles.main} />
       </div>
     )

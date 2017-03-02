@@ -6,7 +6,7 @@ var styles = {
     display: "flex",
     paddingLeft: "5em",
     paddingRight: "5em",
-    background: "darkgreen",
+    background: "grey",
     '@media (max-width: 600px)': {
       paddingLeft: "2em",
       paddingRight: "2em",
@@ -14,9 +14,9 @@ var styles = {
   },
   main: {
     flex: 1,
-    border: "1px solid black",
-    background: "lightgrey",
-    textAlign: "center"
+    // border: "1px solid black",
+    // background: "lightgrey",
+    // textAlign: "center"
   }
 }
 
@@ -27,7 +27,7 @@ const Footer = React.createClass({
     return (
       <div style={styles.wrapper}>
         <div style={styles.main}>
-            <h1>footer</h1>
+            <h1>© 2017 Wisdom. All rights reserved.</h1>
         </div>
       </div>
     )

@@ -6,16 +6,17 @@ var styles = {
       display: "flex",
       justifyContent: "flex-end",
       height: "4em",
+      background: "grey",
       paddingLeft: "5em",
       paddingRight: "5em",
-      '@media (max-width: 600px)': {
+      '@media (max-width: 700px)': {
         display: "none"
       }
     },
     main: {
       display: "flex",
       width: "7.5em",
-      border: "1px solid black",
+    //   border: "1px solid black",
       background: "lightgrey",
     },
     center: {

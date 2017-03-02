@@ -8,7 +8,7 @@ var styles = {
     paddingRight: "5em",
     paddingBottom: "5em",
     paddingTop: "2em",
-    background: "lightgreen",
+    background: "white",
     '@media (max-width: 600px)': {
       paddingLeft: "2em",
       paddingRight: "2em",
@@ -17,8 +17,8 @@ var styles = {
   responsive_row: {
     display: "flex",
     flex: 1,
-    background: "lightblue",
-    border: "1px solid blue",
+    // background: "lightblue",
+    // border: "1px solid blue",
     '@media (max-width: 900px)': {
       flexDirection: "column"
     }
@@ -26,8 +26,8 @@ var styles = {
   row_padding: {
     display: "flex",
     flex: 1,
-    background: "lightblue",
-    border: "1px solid blue",
+    // background: "lightblue",
+    // border: "1px solid blue",
     paddingTop: "1em",
     paddingBottom: "1em",
   },
@@ -35,14 +35,14 @@ var styles = {
     flex: 1,
     height: "5em",
     border: "1px solid black",
-    background: "lightgrey",
+    // background: "lightgrey",
     
   },
   description: {
     fontSize: "4em",
     textTransform: "uppercase",
-    border: "1px solid black",
-    background: "lightgrey",
+    // border: "1px solid black",
+    // background: "lightgrey",
     margin: "auto"
   }
 }

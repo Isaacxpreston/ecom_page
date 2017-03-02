@@ -16,7 +16,7 @@ const styles = {
 		top: 0,
 		left: 0,
 		width: "100%",
-		background: "grey"
+		// background: "grey"
 	},
 	content: {
 		position: "absolute",
@@ -24,7 +24,7 @@ const styles = {
 		left: 0,
 		width: "100%",
 		zIndex: 2,
-		background: "blue",
+		// background: "blue",
 	},
 	backdrop: {
 		position: "fixed",
@@ -34,6 +34,7 @@ const styles = {
 		zIndex: 1,
 	},
 	wrapper: {
+		fontFamily: "sans-serif"
 	}
 }
 

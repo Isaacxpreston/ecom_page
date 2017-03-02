@@ -31,10 +31,10 @@ var styles = {
     paddingBottom: "1em",
   },
   image: {
-    height: "500px",
-    width: "600px",
+    height: "450px",
+    width: "550px",
     paddingLeft: "2em",
-    '@media (max-width: 900px)': {
+    '@media (max-width: 700px)': {
       display: "none"
     } 
   },
@@ -43,7 +43,7 @@ var styles = {
     flex: 1,
     // background: "lightblue",
     // border: "1px solid blue",
-    '@media (max-width: 900px)': {
+    '@media (max-width: 1200px)': {
       flexDirection: "column"
     }
   },

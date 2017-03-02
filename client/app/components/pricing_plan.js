@@ -7,8 +7,9 @@ var styles = {
     flexDirection: "column",
     flex: 1,
     height: "30em",
-    border: "1px solid black",
-    background: "lightgrey",
+    margin: "1em",
+    // border: "1px solid black",
+    // background: "lightgrey",
     '@media (max-width: 900px)': {
       height: "auto"
     }
@@ -16,7 +17,7 @@ var styles = {
   title_wrapper: {
     display: "flex",
     flex: 1,
-    background: "darkred"
+    background: "grey"
   },
   pricing_wrapper: {
     display: "flex",
@@ -28,7 +29,7 @@ var styles = {
   pricing_inner: {
     display: "flex",
     flex: 1,
-    background: "grey"
+    // background: "grey"
   },
   currency: {
     fontSize: "2.5em"
@@ -49,7 +50,7 @@ var styles = {
     paddingTop: "1em",
     flex: 1,
     color: "white",
-    background: "navy"
+    background: "grey"
   }
 }
 
