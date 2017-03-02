@@ -1,6 +1,10 @@
 import React from 'react'
 import Radium from 'radium'
 
+//todo-
+  //box shadow
+  //logo on left
+
 var styles = {
     wrapper: {
       display: "flex",
@@ -16,8 +20,6 @@ var styles = {
     main: {
       display: "flex",
       width: "7.5em",
-    //   border: "1px solid black",
-      // background: "lightgrey",
     },
     center: {
       margin: "auto"
