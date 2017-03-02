@@ -15,19 +15,17 @@ var styles = {
 
     drop_down: {
       position: "absolute",
-      top: "calc(3em +2px)",
-      right: "calc(2em + 2px)",
+      top: "3em",
+      right: "2em",
       width: "7.5em",
       flexDirection: "column",
     },
 
     main: {
       display: "flex",
-    //   flex: 1, //change to flex width
       width: "7.5em",
       height: "4em",
-    //   border: "1px solid black",
-      // background: "lightgrey",
+      background: "grey",
     },
 
     center: {
@@ -62,7 +60,7 @@ const MobileNavBar = React.createClass({
         </div>
 
         <div style={styles.main}>
-            <div style={styles.center}>More</div>
+            <div style={styles.center}>Menu</div>
         </div>
 
 

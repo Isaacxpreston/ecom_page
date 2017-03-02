@@ -57,10 +57,10 @@ const Pricing = React.createClass({
           <div style={styles.description}>pricing</div>
         </div>
         <div style={styles.responsive_row}>
-          <PricingPlan />
-          <PricingPlan />
-          <PricingPlan />
-          <PricingPlan />
+          <PricingPlan name="basic" />
+          <PricingPlan name="premium" />
+          <PricingPlan name="trader" />
+          <PricingPlan name="whale" />
         </div>
       </div>
     )

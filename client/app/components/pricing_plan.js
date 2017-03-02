@@ -1,12 +1,13 @@
 import React from 'react'
 import Radium from 'radium'
+import pricing_data from '../utils/pricing_data'
 
 var styles = {
   content: {
     display: "flex",
     flexDirection: "column",
     flex: 1,
-    margin: "0.75em",
+    margin: "1em",
   },
   title_wrapper: {
     display: "flex",
@@ -26,18 +27,12 @@ var styles = {
     flex: 1
   },
   currency: {
-    fontSize: "2.5em"
-  },
-  join: {
-    paddingLeft: "0.75em",
-    paddingTop: "0.5em",
-    fontSize: "1.25em",
-    alignSelf: "center"
+    fontSize: "4em",
   },
   title: {
     margin: "auto",
     textAlign: "center",
-    fontSize: "1.5em",
+    fontSize: "1.75em",
     color: "white",
     textTransform: "uppercase",
   },
@@ -50,52 +45,53 @@ var styles = {
 }
 
 const PricingPlan = React.createClass({
-
 	render() {
+    var data = pricing_data[this.props.name]
+
     return (
         <div style={styles.content}>
 
-          <div style={styles.title_wrapper}>
-            <div style={styles.title}>
-              Trader
+          <div>
+            <div style={styles.title_wrapper}>
+              <div style={styles.title}>
+                {data.name}
+              </div>
+            </div>
+            <div  style={styles.pricing_wrapper}>
+              <div style={styles.pricing}>
+                <div style={styles.pricing_inner}>
+                  <div style={styles.currency}>
+                    {data.price.usd}
+                  </div>
+                  <div>
+                    USD
+                    </div>
+                </div>
+                <div style={styles.pricing_inner}>
+                  <div style={styles.currency}>
+                    {data.price.btc}
+                  </div>
+                  <div>
+                    BTC
+                  </div>
+                </div>
+                <div style={styles.pricing_inner}>
+                  <div>
+                    yearly
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div  style={styles.pricing_wrapper}>
-            <div style={styles.pricing}>
-              <div style={styles.pricing_inner}>
-                <div style={styles.currency}>
-                  9.99 USD
-                </div>
-              </div>
-              <div style={styles.pricing_inner}>
-                <div style={styles.currency}>
-                  0.01 BTC 
-                </div>
-                <div style={styles.join}>
-                  / year
-                </div>
-              </div>
+          <div>
+          {data.features.map((feature) => {
+            return(
+            <div key={feature} style={styles.feature}>
+              {feature}
             </div>
-          </div>
-
-          <div style={styles.feature}>
-            Unlimited trades
-          </div>
-          <div style={styles.feature}>
-            Calculate capital gains with FIFO, LIFO, or Average
-          </div>
-          <div style={styles.feature}>
-            Bitcoin, Ether, Monero, or any alt-coin
-          </div>
-          <div style={styles.feature}>
-            View sales, balances and cost-basis
-          </div>
-          <div style={styles.feature}>
-            1040 (Schedule D), Form 8949 data
-          </div>
-          <div style={styles.feature}>
-            Export to TurboTax®
+            )
+          })}
           </div>
 
         </div>
