@@ -41,7 +41,10 @@ const NavBar = React.createClass({
         <div style={styles.main}>
             <div style={styles.center}>FAQ</div>
         </div>
-        <div style={styles.main}>
+        <div onClick={() =>{
+          var y = document.getElementById("pricing").getBoundingClientRect().top + window.scrollY
+          window.scrollTo(0, y)   
+        }} style={styles.main}>
             <div style={styles.center}>Pricing</div>
         </div>
         <div style={styles.main}>

@@ -52,7 +52,7 @@ const Pricing = React.createClass({
 
 	render() {
     return (
-      <div style={styles.wrapper}>
+      <div style={styles.wrapper} id="pricing">
         <div style={styles.row_padding}>
           <div style={styles.description}>pricing</div>
         </div>

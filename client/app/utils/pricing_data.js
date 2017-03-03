@@ -46,8 +46,8 @@ const pricing_data = {
   whale: {
     name: "Whale",
     price: {
-      btc: 1.00,
-      usd: 1
+      btc: "1.00",
+      usd: null
     },
     features: [
       "Dedicated CPA",

@@ -6,6 +6,7 @@ var styles = {
   content: {
     display: "flex",
     flexDirection: "column",
+    // alignSelf: "flex-start",
     flex: 1,
     margin: "1em",
   },
@@ -64,8 +65,8 @@ const PricingPlan = React.createClass({
                     {data.price.usd}
                   </div>
                   <div>
-                    USD
-                    </div>
+                    {data.price.usd ? "USD" : "Starting at"}
+                  </div>
                 </div>
                 <div style={styles.pricing_inner}>
                   <div style={styles.currency}>
@@ -77,7 +78,7 @@ const PricingPlan = React.createClass({
                 </div>
                 <div style={styles.pricing_inner}>
                   <div>
-                    yearly
+                    per Year
                   </div>
                 </div>
               </div>
